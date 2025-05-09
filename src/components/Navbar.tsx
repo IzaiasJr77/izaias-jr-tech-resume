@@ -31,11 +31,11 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-2" : "py-4 bg-transparent"
+        scrolled ? "bg-resume-dark/95 backdrop-blur-sm shadow-md py-2" : "py-4 bg-transparent"
       }`}
     >
       <nav className="container flex justify-between items-center">
-        <a href="#home" className="text-xl font-semibold text-resume-blue">
+        <a href="#home" className="text-xl font-semibold text-resume-blue-light">
           Izaias Jr.
         </a>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li key={link.name}>
               <a
                 href={link.href}
-                className="text-resume-gray hover:text-resume-blue transition-colors duration-200 font-medium"
+                className="text-gray-300 hover:text-resume-blue-light transition-colors duration-200 font-medium"
               >
                 {link.name}
               </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="md:hidden text-white hover:text-resume-blue-light"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -65,13 +65,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white shadow-md md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-resume-dark/95 backdrop-blur-sm shadow-md md:hidden">
             <ul className="flex flex-col py-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="block py-3 px-6 text-resume-gray hover:text-resume-blue hover:bg-gray-50 transition-colors duration-200"
+                    className="block py-3 px-6 text-gray-300 hover:text-resume-blue-light hover:bg-gray-800/50 transition-colors duration-200"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}
