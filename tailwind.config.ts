@@ -72,7 +72,8 @@ export default {
 						DEFAULT: '#4B5563', // Medium gray
 						light: '#F8F9FA', // Very light gray/almost white
 						dark: '#1F2937', // Dark gray
-					}
+					},
+					dark: '#121212', // Dark background color
 				}
 			},
 			fontFamily: {

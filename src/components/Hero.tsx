@@ -7,27 +7,27 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-20 pb-16"
+      className="min-h-screen flex items-center justify-center pt-20 pb-16 bg-resume-dark"
     >
       <div className="container flex flex-col items-center text-center">
         <div className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-resume-blue overflow-hidden mb-6">
           <img
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            src="/lovable-uploads/ae84b369-5f96-45a5-b9aa-f228400a7ace.png"
             alt="Izaias Palma Junior"
             className="w-full h-full object-cover"
           />
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-resume-blue mb-2 animate-fade-in">
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 animate-fade-in">
           Izaias Palma Junior
         </h1>
 
-        <p className="text-resume-gray mb-2 animate-fade-in">
+        <p className="text-gray-300 mb-2 animate-fade-in">
           Parque Viana, Barueri-SP
         </p>
 
         <div className="max-w-2xl mx-auto mb-8 animate-fade-in-up">
-          <p className="text-xl md:text-2xl text-resume-gray-dark leading-relaxed italic">
+          <p className="text-xl md:text-2xl text-gray-300 leading-relaxed italic">
             "Profissional em transição de carreira para tecnologia, com sólida experiência em controladoria, 
             foco em desenvolvimento full stack e paixão por resolver problemas com código."
           </p>
@@ -51,7 +51,7 @@ const Hero = () => {
           <Button
             variant="outline"
             className="border-resume-blue text-resume-blue hover:bg-resume-blue hover:text-white"
-            onClick={() => window.open("https://github.com/izaiasjr", "_blank")}
+            onClick={() => window.open("https://github.com/IzaiasJr77/izaias-jr-tech-resume.git", "_blank")}
           >
             <Github className="mr-2 h-4 w-4" />
             GitHub

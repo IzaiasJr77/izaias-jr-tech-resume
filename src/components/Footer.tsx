@@ -6,12 +6,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-resume-blue text-white py-10">
+    <footer className="bg-resume-dark text-white py-10">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="font-semibold text-lg mb-1">Izaias Palma Junior</p>
-            <p className="text-sm text-gray-200">
+            <p className="text-sm text-gray-300">
               © {currentYear} Todos os direitos reservados
             </p>
           </div>
@@ -27,7 +27,7 @@ const Footer = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="https://github.com/izaiasjr"
+              href="https://github.com/IzaiasJr77/izaias-jr-tech-resume.git"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
