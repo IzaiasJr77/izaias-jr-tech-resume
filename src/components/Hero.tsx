@@ -1,7 +1,10 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { generateCV } from "@/utils/generatePDF";
+
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-20 pb-16 relative">
       {/* Modern tech background with gradient and pattern */}
@@ -15,7 +18,7 @@ const Hero = () => {
         {/* Modern profile photo with adjusted sizing to prevent cropping */}
         <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden mb-8 shadow-xl bg-gray-800/50">
           <Avatar className="w-full h-full">
-            <AvatarImage alt="Izaias Palma Junior" className="h-full w-full object-cover" src="/lovable-uploads/3ec0b751-5af1-4b78-972b-be9f86443f4f.jpg" />
+            <AvatarImage alt="Izaias Palma Junior" className="h-full w-full object-cover" src="/lovable-uploads/94ea1181-79e4-433c-9dd2-479978c07a23.png" />
             <AvatarFallback className="text-4xl bg-resume-blue text-white">
               IPJ
             </AvatarFallback>
@@ -39,7 +42,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up">
-          <Button className="bg-resume-blue hover:bg-resume-blue/90 text-white" onClick={() => window.open("/resume.pdf", "_blank")}>
+          <Button className="bg-resume-blue hover:bg-resume-blue/90 text-white" onClick={generateCV}>
             Download CV
           </Button>
           <Button variant="outline" className="border-resume-blue text-resume-blue-light hover:bg-resume-blue hover:text-white" onClick={() => window.open("https://linkedin.com/in/izaiasjunior1", "_blank")}>
@@ -54,4 +57,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
