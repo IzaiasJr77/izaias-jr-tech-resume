@@ -6,20 +6,47 @@ import { Badge } from "@/components/ui/badge";
 const Certifications = () => {
   const certifications = [
     {
-      title: "Formação Full Stack Developer",
-      institution: "Digital Innovation One",
-      status: "Em andamento",
-      date: "2023 - Presente",
-      description: "Formação completa em desenvolvimento Full Stack com ênfase em Java, Spring Boot, APIs REST, Kafka, JPA, testes com JUnit e Mockito.",
-      skills: ["Java", "Spring Boot", "APIs REST", "Kafka", "JPA", "JUnit", "Mockito"]
+      title: "Jornada Python com IA e Análise de Dados",
+      institution: "Instituição de Ensino",
+      status: "Concluído",
+      date: "Jun/2025",
+      description: "Curso completo focado em Python para desenvolvimento de soluções com Inteligência Artificial e análise avançada de dados.",
+      skills: ["Python", "IA", "Análise de Dados", "Machine Learning"]
     },
     {
-      title: "Certificação em Prompt Engineering",
-      institution: "AI Training Academy",
+      title: "Curso Full Stack Java",
+      institution: "Instituição de Ensino",
       status: "Concluído",
-      date: "2023",
-      description: "Certificação especializada em técnicas de Prompt Engineering para aplicação eficiente de Inteligência Artificial em soluções de negócios e desenvolvimento.",
-      skills: ["IA", "Prompt Engineering", "GPT", "Engenharia de Prompts"]
+      date: "Mar/2025",
+      description: "Formação completa em desenvolvimento Full Stack com Java, HTML, CSS, JavaScript, Spring Boot e MySQL.",
+      skills: ["Java", "HTML", "CSS", "JavaScript", "Spring Boot", "MySQL"]
+    },
+    {
+      title: "Imersão em Inteligência Artificial",
+      institution: "Instituição de Ensino",
+      status: "Em andamento",
+      date: "Jun/2025",
+      description: "Programa intensivo de imersão em IA com foco em aplicações práticas e desenvolvimento de soluções inovadoras.",
+      skills: ["IA", "Machine Learning", "Deep Learning", "Automação"]
+    }
+  ];
+
+  const projects = [
+    {
+      title: "Projetos com Python e IA",
+      description: "Desenvolvimento de automações com IA, integração com APIs e WhatsApp (Twilio)."
+    },
+    {
+      title: "Bots com IA Generativa",
+      description: "Criação de bots inteligentes com IA generativa e análises automatizadas."
+    },
+    {
+      title: "Versionamento de Código",
+      description: "Experiência prática com Git e GitHub para controle de versão."
+    },
+    {
+      title: "APIs e Prompt Engineering",
+      description: "Conhecimentos em desenvolvimento de APIs REST e técnicas de Prompt Engineering."
     }
   ];
 
@@ -29,7 +56,7 @@ const Certifications = () => {
         <div className="section-content">
           <h2 className="section-title">Certificações e Cursos</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {certifications.map((cert, index) => (
               <Card key={index} className="shadow-md hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -59,6 +86,24 @@ const Certifications = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-6 text-resume-blue">
+              Projetos e Conhecimentos Técnicos
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {projects.map((project, index) => (
+                <Card key={index} className="shadow-md hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-lg">{project.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>{project.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>

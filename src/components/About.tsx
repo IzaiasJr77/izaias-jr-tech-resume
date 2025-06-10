@@ -12,21 +12,21 @@ const About = () => {
             <CardContent className="p-6 md:p-8">
               <div className="space-y-4 text-resume-gray-dark">
                 <p>
-                  Brasileiro, casado, 27 anos.
+                  Brasileiro, casado, 28 anos.
                 </p>
                 <p>
-                  Construí uma carreira consolidada como Analista de Controladoria, com atuação em auditoria, 
-                  elaboração de relatórios gerenciais, análise de dados e controle de folha de pagamento.
+                  Profissional em transição de carreira, com sólida experiência em controladoria e 
+                  financeiro. Migrando para a área de tecnologia com foco em Inteligência Artificial, 
+                  automações com Python e análise de dados.
                 </p>
                 <p>
-                  Atualmente estou em transição para a área de tecnologia com foco em desenvolvimento back-end com Java.
+                  Experiência consolidada em análise de dados financeiros, auditoria, elaboração de 
+                  relatórios gerenciais e controle de processos. Atualmente desenvolvendo projetos 
+                  com Python, automações com IA, APIs e integração com WhatsApp (Twilio).
                 </p>
                 <p>
-                  Estou cursando formação Full Stack com ênfase em Java, Spring Boot, APIs REST, Kafka, 
-                  JPA, testes com JUnit e Mockito.
-                </p>
-                <p>
-                  Possuo certificação em Prompt Engineering com domínio de técnicas para IA aplicada.
+                  Criação de bots com IA generativa, análises automatizadas, conhecimentos em Git, 
+                  GitHub para versionamento de código, Prompt Engineering e APIs REST.
                 </p>
               </div>
             </CardContent>

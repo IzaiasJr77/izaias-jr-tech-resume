@@ -22,9 +22,9 @@ const Hero = () => {
         <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden mb-8 shadow-xl bg-gray-800/50">
           <Avatar className="w-full h-full">
             <AvatarImage 
-              src="/lovable-uploads/ae84b369-5f96-45a5-b9aa-f228400a7ace.png"
+              src="/lovable-uploads/94ea1181-79e4-433c-9dd2-479978c07a23.png"
               alt="Izaias Palma Junior"
-              className="h-full w-full object-contain p-1"
+              className="h-full w-full object-cover"
             />
             <AvatarFallback className="text-4xl bg-resume-blue text-white">
               IPJ
@@ -42,8 +42,9 @@ const Hero = () => {
 
         <div className="max-w-2xl mx-auto mb-8 animate-fade-in-up">
           <p className="text-xl md:text-2xl text-gray-200 leading-relaxed italic">
-            "Profissional em transição de carreira para tecnologia, com sólida experiência em controladoria, 
-            foco em desenvolvimento full stack e paixão por resolver problemas com código."
+            "Profissional em transição de carreira, com sólida experiência em controladoria e 
+            financeiro. Migrando para a área de tecnologia com foco em Inteligência Artificial, 
+            automações com Python e análise de dados."
           </p>
         </div>
 

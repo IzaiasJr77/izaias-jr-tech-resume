@@ -6,71 +6,77 @@ import { Badge } from "@/components/ui/badge";
 const Experience = () => {
   const experiences = [
     {
-      company: "Grupo Souza Lima",
-      position: "Analista de Controladoria Pleno e Assistente",
-      period: "2020 - Atual",
+      company: "VIVEO",
+      position: "Analista de Benefícios",
+      period: "Nov/2023 - Jun/2025",
       description: [
-        "Auditoria e análise de dados financeiros",
-        "Elaboração de relatórios gerenciais",
-        "Controle de folha de pagamento",
-        "Implementação de melhorias em processos internos"
+        "Responsável pelo fluxo e processo de pagamento das NFs de benefícios",
+        "Controle e lançamento no sistema Protheus",
+        "Auditoria de valores mensais e análise de variações"
       ],
-      skills: ["Análise de Dados", "Excel Avançado", "Power BI", "Automação de Processos"]
+      skills: ["Sistema Protheus", "Auditoria", "Análise de Variações", "Controle de Processos"]
+    },
+    {
+      company: "Grupo Souza Lima",
+      position: "Analista de Controladoria Pleno",
+      period: "Out/2022 - Nov/2023",
+      description: [
+        "Elaboração e consolidação de relatórios gerenciais",
+        "Análises comparativas e variações de contas",
+        "Suporte na auditoria de folha de pagamento e benefícios"
+      ],
+      skills: ["Relatórios Gerenciais", "Análise Comparativa", "Auditoria", "Controladoria"]
+    },
+    {
+      company: "Grupo Souza Lima",
+      position: "Assistente de Controladoria",
+      period: "Nov/2020 - Out/2022",
+      description: [
+        "Auditoria de processos e folha de pagamento",
+        "Conciliação bancária e atualização de gráficos gerenciais",
+        "Análise de contratos e pagamentos a terceiros"
+      ],
+      skills: ["Conciliação Bancária", "Auditoria de Processos", "Análise de Contratos", "Gráficos Gerenciais"]
     },
     {
       company: "Vitalflex Diamond Group",
-      position: "Auxiliar de Controladoria e Contábil Fiscal",
-      period: "2018 - 2020",
+      position: "Auxiliar de Controladoria",
+      period: "Jan/2018 - Abr/2020",
       description: [
-        "Suporte na elaboração de demonstrativos financeiros",
-        "Controle de documentação fiscal",
-        "Análise de dados contábeis",
-        "Apoio em auditorias internas"
+        "Análise de relatórios como DRE e Balanço Patrimonial",
+        "Emissão de GNRE e escrituração de notas fiscais",
+        "Experiência anterior como Auxiliar Contábil Fiscal com foco em impostos e declarações acessórias"
       ],
-      skills: ["Análise Contábil", "Organização", "Atenção aos Detalhes"]
+      skills: ["DRE", "Balanço Patrimonial", "GNRE", "Escrituração Fiscal", "Impostos"]
     },
     {
-      company: "AGN Innova",
-      position: "Estágio em Finanças",
-      period: "2017 - 2018",
+      company: "AGN Innova S.A",
+      position: "Estagiário em Finanças",
+      period: "Nov/2015 - Nov/2017",
       description: [
-        "Apoio em operações financeiras",
-        "Elaboração de relatórios básicos",
-        "Organização de documentação",
-        "Contato com clientes"
+        "Pagamento de contas e provisionamento financeiro",
+        "Emissão de notas fiscais e controle de suprimentos"
       ],
-      skills: ["Comunicação", "Organização", "Microsoft Office"]
-    },
-    {
-      company: "R&L Consultoria",
-      position: "Office Boy",
-      period: "2016 - 2017",
-      description: [
-        "Suporte administrativo geral",
-        "Gestão de correspondências",
-        "Organização de documentos",
-        "Serviços externos"
-      ],
-      skills: ["Proatividade", "Responsabilidade", "Organização"]
+      skills: ["Finanças", "Provisionamento", "Notas Fiscais", "Controle de Suprimentos"]
     }
   ];
 
   const transferableSkills = [
     {
       title: "Análise de Dados",
-      description: "Experiência com análise detalhada e interpretação de dados, habilidade crucial para desenvolvimento back-end e tomada de decisões baseadas em dados."
+      description: "Experiência com análise detalhada e interpretação de dados, habilidade crucial para desenvolvimento com IA e automações."
     },
     {
-      title: "Confiabilidade de Informações",
-      description: "Prática em garantir precisão e integridade de dados financeiros, transferível para validação e teste de software."
+      title: "Automação de Processos",
+      description: "Experiência em automatizar processos financeiros, agora aplicada em automações com Python e IA."
     },
     {
-      title: "Automação de Relatórios",
-      description: "Desenvolvimento de soluções automatizadas para processos repetitivos, habilidade diretamente aplicável à programação e automação de tarefas."
+      title: "Controle de Qualidade",
+      description: "Prática em auditoria e validação de dados, essencial para desenvolvimento de soluções confiáveis."
     },
     {
-      title: "Raciocínio Lógico",
-      description: "Forte capacidade de análise crítica e solução de problemas complexos, essencial para desenvolvimento de algoritmos e debugging."
+      title: "Raciocínio Analítico",
+      description: "Forte capacidade de análise crítica e solução de problemas complexos, essencial para desenvolvimento de algoritmos e IA."
     }
   ];
 
