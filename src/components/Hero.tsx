@@ -1,10 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { generateCV } from "@/utils/generatePDF";
-
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-20 pb-16 relative">
       {/* Modern tech background with gradient and pattern */}
@@ -29,9 +27,7 @@ const Hero = () => {
           Izaias Palma Junior
         </h1>
 
-        <p className="text-gray-300 mb-2 animate-fade-in">
-          Parque Viana, Barueri-SP
-        </p>
+        <p className="text-gray-300 mb-2 animate-fade-in">Barueri-SP</p>
 
         <div className="max-w-2xl mx-auto mb-8 animate-fade-in-up">
           <p className="text-xl md:text-2xl text-gray-200 leading-relaxed italic">
@@ -57,5 +53,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;
