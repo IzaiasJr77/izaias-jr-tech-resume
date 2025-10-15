@@ -6,48 +6,79 @@ import { Badge } from "@/components/ui/badge";
 const Certifications = () => {
   const certifications = [
     {
-      title: "Jornada Python com IA e Análise de Dados",
-      institution: "Instituição de Ensino",
-      status: "Concluído",
-      date: "Jun/2025",
-      description: "Curso completo focado em Python para desenvolvimento de soluções com Inteligência Artificial e análise avançada de dados.",
-      skills: ["Python", "IA", "Análise de Dados", "Machine Learning"]
+      title: "Testes Automatizados e IA Generativa",
+      institution: "Em andamento",
+      status: "Cursando",
+      date: "2025",
+      description: "Curso focado em testes automatizados com IA generativa",
+      skills: ["IA Generativa", "Testes Automatizados"]
     },
     {
-      title: "Curso Full Stack Java",
-      institution: "Instituição de Ensino",
+      title: "Complete AI Engineer Training",
+      institution: "Udemy",
       status: "Concluído",
-      date: "Mar/2025",
-      description: "Formação completa em desenvolvimento Full Stack com Java, HTML, CSS, JavaScript, Spring Boot e MySQL.",
-      skills: ["Java", "HTML", "CSS", "JavaScript", "Spring Boot", "MySQL"]
+      date: "Out/2025",
+      description: "Python, NPL, Transformers, LLMs - Treinamento completo",
+      skills: ["Python", "NPL", "Transformers", "LLMs"]
+    },
+    {
+      title: "Automações e Agentes de IA com N8N",
+      institution: "Udemy",
+      status: "Concluído",
+      date: "Ago/2025",
+      description: "Automações inteligentes usando N8N",
+      skills: ["N8N", "Automação", "IA"]
+    },
+    {
+      title: "Bootcamp Python e Inteligência Artificial",
+      institution: "Bootcamp",
+      status: "Concluído",
+      date: "Jul/2025",
+      description: "Do Zero ao Expert em Python e IA",
+      skills: ["Python", "IA"]
+    },
+    {
+      title: "Jornada Python com IA e Análise de Dados",
+      institution: "Hashtag Treinamentos",
+      status: "Concluído",
+      date: "Jun/2025",
+      description: "Curso completo de Python focado em IA e análise de dados",
+      skills: ["Python", "IA", "Análise de Dados"]
+    },
+    {
+      title: "Engenharia de Prompt",
+      institution: "Online",
+      status: "Concluído",
+      date: "Abr/2025",
+      description: "Técnicas avançadas de prompt engineering",
+      skills: ["Prompt Engineering", "LLMs"]
     },
     {
       title: "Imersão em Inteligência Artificial",
-      institution: "Instituição de Ensino",
-      status: "Em andamento",
+      institution: "Alura",
+      status: "Concluído",
       date: "Jun/2025",
-      description: "Programa intensivo de imersão em IA com foco em aplicações práticas e desenvolvimento de soluções inovadoras.",
-      skills: ["IA", "Machine Learning", "Deep Learning", "Automação"]
+      description: "Imersão prática em IA e suas aplicações",
+      skills: ["IA", "Machine Learning"]
+    },
+    {
+      title: "Curso Full Stack Java",
+      institution: "SENAI",
+      status: "Concluído",
+      date: "Mar/2025",
+      description: "Java, HTML, CSS, JavaScript, Spring Boot, MySQL",
+      skills: ["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"]
     }
   ];
 
-  const projects = [
-    {
-      title: "Projetos com Python e IA",
-      description: "Desenvolvimento de automações com IA, integração com APIs e WhatsApp (Twilio)."
-    },
-    {
-      title: "Bots com IA Generativa",
-      description: "Criação de bots inteligentes com IA generativa e análises automatizadas."
-    },
-    {
-      title: "Versionamento de Código",
-      description: "Experiência prática com Git e GitHub para controle de versão."
-    },
-    {
-      title: "APIs e Prompt Engineering",
-      description: "Conhecimentos em desenvolvimento de APIs REST e técnicas de Prompt Engineering."
-    }
+  const skills = [
+    "Python, Pandas, Numpy",
+    "APIs REST, IA Generativa",
+    "Automações com IA (Evolution, WhatsApp)",
+    "Git/Github",
+    "Prompt Engineering, LLMs, Langchain",
+    "Projetos com Automações no N8N e Lovable AI",
+    "Banco de dados SQL (MySQL/PostgreSQL)"
   ];
 
   return (
@@ -90,16 +121,13 @@ const Certifications = () => {
 
           <div>
             <h3 className="text-xl font-semibold mb-6 text-resume-blue">
-              Projetos e Conhecimentos Técnicos
+              Habilidades Técnicas
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {projects.map((project, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {skills.map((skill, index) => (
                 <Card key={index} className="shadow-md hover:shadow-lg transition-shadow">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">{project.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p>{project.description}</p>
+                  <CardContent className="p-4">
+                    <p className="text-resume-gray-dark">{skill}</p>
                   </CardContent>
                 </Card>
               ))}

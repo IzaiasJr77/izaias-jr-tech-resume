@@ -15,18 +15,15 @@ const About = () => {
                   Brasileiro, casado, 28 anos.
                 </p>
                 <p>
-                  Profissional em transição de carreira, com sólida experiência em controladoria e 
-                  financeiro. Migrando para a área de tecnologia com foco em Inteligência Artificial, 
-                  automações com Python e análise de dados.
+                  Engenheiro de Inteligência Artificial Jr com experiência em projetos práticos utilizando Python, 
+                  IA generativa, engenharia de prompt e integração com APIs. Atua no desenvolvimento de soluções 
+                  inovadoras com foco em LLMs e automações inteligentes, aplicando conceitos modernos da IA de 
+                  forma eficaz.
                 </p>
                 <p>
-                  Experiência consolidada em análise de dados financeiros, auditoria, elaboração de 
-                  relatórios gerenciais e controle de processos. Atualmente desenvolvendo projetos 
-                  com Python, automações com IA, APIs e integração com WhatsApp (Twilio).
-                </p>
-                <p>
-                  Criação de bots com IA generativa, análises automatizadas, conhecimentos em Git, 
-                  GitHub para versionamento de código, Prompt Engineering e APIs REST.
+                  Possui 8 anos de vivência no setor financeiro e de controladoria, agregando visão analítica e 
+                  estratégica aos projetos. Une pensamento estruturado à tecnologia para criar soluções eficientes 
+                  e escaláveis.
                 </p>
               </div>
             </CardContent>
